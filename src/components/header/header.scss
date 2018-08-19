@@ -1,0 +1,46 @@
+
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 140px;
+  background: rgba(0,0,0, 0.5);
+  padding: 0 20px;
+  color: #ffffff;
+  .logo{
+    cursor: pointer;
+    height: 30px;
+  }
+  .seperator{
+    margin: 0 5px;
+  }
+  .login-info{
+    display: flex;
+  }
+  .account-holder{
+    display: flex;
+    align-items: center;
+    .join{
+      display: flex;
+      .account-action{
+        cursor: pointer;
+      }
+    }
+  }
+  .hamburger{
+    padding: 0;
+    height: 25px;
+    margin-left: 10px;
+  }
+  .hamburger-inner{
+    background: #ffffff;
+    &:before{
+      background: #ffffff;
+    }
+    &:after{
+      background: #ffffff;
+    }
+
+  }
+}

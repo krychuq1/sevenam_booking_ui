@@ -1,0 +1,9 @@
+<div class="drop-down-holder">
+    <div class="custom-drop"  (click) = "changeStatus()">
+        <p>{{selectValue}}</p>
+        <img src="../../assets/images/arrow.png">
+    </div>
+    <ul [ngClass]="{'isActive' : show.numberOfPeople && !show.time}">
+        <li *ngFor="let number of numberOfPeople" (click)="setSelectValue(number.viewValue)">{{number.viewValue}}</li>
+    </ul>
+</div>

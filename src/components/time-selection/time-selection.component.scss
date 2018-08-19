@@ -1,0 +1,25 @@
+.time-holder{
+  display: none;
+  &.isActive{
+    display: flex;
+  }
+  .time{
+    width: 50%;
+    display: block;
+    &.hour{
+      border-right: 0;
+      visibility: hidden;
+      &.isActive{
+        visibility: visible;
+      }
+    }
+    &.minute{
+      border-left: 0;
+      visibility: hidden;
+      &.isActive{
+        visibility: visible;
+      }
+
+    }
+  }
+}

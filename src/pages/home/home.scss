@@ -1,0 +1,23 @@
+.pageHolder{
+  background-image: url("../../assets/images/background1.jpg");
+  background-size: cover;
+
+
+  .first-section{
+    margin: 0 10px;
+    display: flex;
+    padding: 0 20px 150px 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h2{
+      margin-top: 40px;
+      font-size: 1.1rem;
+      line-height: 1.4rem;
+    }
+    .header-holder{
+      min-height: 100px;
+    }
+  }
+}

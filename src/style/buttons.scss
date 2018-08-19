@@ -1,0 +1,18 @@
+$orange: #fcad6b;
+
+button{
+  cursor: pointer;
+  background-color: $orange;
+  color: white;
+  height: 40px;
+  border: none;
+  font-size: 1.1rem;
+  border-radius: 3px;
+  &:disabled{
+    background-color: lightgray;
+  }
+}
+
+:focus {
+  outline: none;
+}

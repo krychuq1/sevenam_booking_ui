@@ -1,0 +1,25 @@
+<div class="header">
+    <img (click)="goHome()" src="../../assets/images/logo.png" alt="logo" class="logo">
+
+    <div class="login-info">
+        <!-- (click)="register()-->
+        <div class="account-holder">
+            <div *ngIf="userService.user">
+                <h1 >hello: {{userService.user.firstName }} </h1> <span (click)="logout()">logout</span>
+            </div>
+            <div class="join" *ngIf="!userService.user">
+                <span (click)="login()" class="account-action">login </span>
+                <span class="seperator">|</span>
+                <span (click)="register()" class="account-action">signup</span>
+            </div>
+        </div>
+
+        <button class="hamburger hamburger--slider" type="button"
+                (click)="openBurger()" [ngClass]="navBurger ? 'is-active' : '' ">
+              <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+              </span>
+        </button>
+    </div>
+
+</div>

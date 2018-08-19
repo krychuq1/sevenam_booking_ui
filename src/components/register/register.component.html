@@ -1,0 +1,40 @@
+<div class="spinner" *ngIf="isProcessing && !isCompleted">
+    <div class="double-bounce1"></div>
+    <div class="double-bounce2"></div>
+</div>
+
+<div class="register-holder" *ngIf="!isProcessing && !isCompleted">
+    <h1>Register</h1>
+
+    <form [formGroup]="registerForm" (ngSubmit)="onSubmitForm()">
+
+        <input formControlName = "firstName" type="text" placeholder="first name">
+        <div *ngIf="firstNameControl.errors && firstNameControl.touched">
+            <p *ngIf="firstNameControl.errors.required">Name is required</p>
+            <p *ngIf="firstNameControl.errors.minlength">Name should be at least {{firstNameControl.errors.minlength.requiredLength}} long </p>
+        </div>
+        <input formControlName = "lastName" type="text" placeholder="last name">
+        <div *ngIf="lastNameControl.errors && lastNameControl.touched">
+            <p *ngIf="lastNameControl.errors.required">last name is required</p>
+            <p *ngIf="firstNameControl.errors.minlength">last name should be at least {{firstNameControl.errors.minlength.requiredLength}} long </p>
+
+        </div>
+
+        <input formControlName = "email" type="text" placeholder="email">
+        <div *ngIf="emailControl.errors && emailControl.touched">
+            <p *ngIf="emailControl.errors.required">email is required</p>
+            <p *ngIf="emailControl.errors.pattern">please enter correct email</p>
+        </div>
+
+        <input formControlName = "password" type="text" placeholder="password">
+        <div *ngIf="passwordControl.errors && passwordControl.touched">
+            <p *ngIf="passwordControl.errors.required">password is required</p>
+            <p *ngIf="passwordControl.errors.minlength">passwordControl should be at least {{passwordControl.errors.minlength.requiredLength}} long </p>
+        </div>
+
+        <button type="submit" [disabled]="!registerForm.valid">Register</button>
+    </form>
+
+</div>
+<h3 *ngIf="isCompleted">Thank you for registration. Please check your email to complete registration!</h3>
+<!--emailControl-->

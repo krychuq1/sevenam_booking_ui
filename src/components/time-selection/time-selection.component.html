@@ -1,0 +1,15 @@
+<div class="drop-down-holder">
+    <div class="custom-drop" (click)="setDefaultTime()">
+        <p *ngIf="time.hh === ''">time</p>
+        <p *ngIf="time.hh !== ''">{{time.hh}} : {{time.mm}}</p>
+        <img src="../../assets/images/arrow.png">
+    </div>
+   <div class="time-holder" [ngClass]="{'isActive' : !show.numberOfPeople && show.time}">
+       <ul class="time hour" [ngClass]="{'isActive' :isActive.hours}">
+           <li *ngFor="let h of hours" (click)="setHour(h)">{{h}}</li>
+       </ul>
+       <ul  class="time minute" [ngClass]="{'isActive' :isActive.minute}">
+           <li *ngFor="let m of minutes" (click)="setMinute(m)">{{m}}</li>
+       </ul>
+   </div>
+</div>

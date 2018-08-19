@@ -1,0 +1,14 @@
+<div class="booking-holder">
+  <!--number of people-->
+  <numberOfPeople [show]="manageDropDown" (showOutput)="eventNumberOfPeople($event)"></numberOfPeople>
+  <!--<md-form-field class="date-picker-holder">-->
+    <!--<input mdInput [mdDatepicker]="picker" placeholder="Choose a date" (click)="dataSelected(picker)" class="dateInput" [(ngModel)]="date">-->
+    <img src="../../assets/images/arrow.png" (click)="dataSelected(picker)">
+
+    <!--<md-datepicker-toggle  class="toogle-date"  mdSuffix [for]="picker"></md-datepicker-toggle>-->
+    <!--[(ngModel)]=""-->
+    <!--<md-datepicker #picker (selectedChanged)="calendarHide()" (appClickOutside)="outOut($event)"> </md-datepicker>-->
+  <!--</md-form-field>-->
+  <!--<timeSelection [show]="manageDropDown" (showOutput)="eventTime($event)"></timeSelection>-->
+  <button id="bookBtn" (click)="bookTrip()" *ngIf="manageDropDown.showButton" >Book rickshaw</button>
+</div>

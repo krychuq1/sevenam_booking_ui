@@ -1,0 +1,35 @@
+.booking-holder{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  #bookBtn{
+    margin-top: 20px;
+    display: flex;
+    align-self: center;
+    width: 180px;
+    justify-content: center;
+  }
+  .date-picker-holder{
+    display: flex;
+    position: relative;
+    .toogle-date{
+      position: absolute;
+      right: 0;
+      top: 20px;
+    }
+    .dateInput{
+      cursor: pointer;
+      border: 1px solid #8c8c8c;
+      font-family: 'Poppins', sans-serif;
+      font-size: 1rem;
+    }
+    img{
+      position: absolute;
+      height: 13px;
+      right: 20px;
+      top: 35px;
+    }
+  }
+}
+
+
