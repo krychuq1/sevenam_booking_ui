@@ -18,53 +18,64 @@ input{
 .cdk-overlay-container .cdk-overlay-pane{
   margin-left: 0 !important;
 }
-.mat-datepicker-content{
-  background-color: rgba(0, 0, 0, 0.5);
-  .mat-calendar{
-    width: 261px;
-    margin-top: 72px;
-    height: 300px;
+.mat-datepicker-toggle{
+  .mat-button, .mat-icon-button, .mat-raised-button{
+    color: black;
+    left: 200px;
+    top: -60px;
   }
-  .mat-calendar-header{
-    background-color: #ffe1c5 !important;
-    padding: 0 !important;;
-    height: 50px !important;;
-
-    .mat-calendar-controls{
-      margin-bottom: 0 !important;
-    }
-
+  .mat-icon-button{
+    color: black !important;
   }
-  .mat-calendar-content{
-    padding: 0;
-  }
-
-  .mat-calendar-table-header{
-    margin-bottom: 0;
-    tr{
-      background-color: #ffe1c5 !important;
-
-      th{
-        color: #666666;
-        border: none;
-
-      }
-    }
-  }
-
 }
-.mat-calendar-body-cell-content{
-  color: #b4b4b4;
-}
-.mat-calendar-body-selected{
-  font-weight: bold;
-  background: none;
-  border: none;
 
-}
-.mat-calendar-body-label{
-  visibility: hidden;
-}
+//.mat-datepicker-content{
+//  background-color: rgba(0, 0, 0, 0.5);
+//  .mat-calendar{
+//    width: 261px;
+//    margin-top: 72px;
+//    height: 300px;
+//  }
+//  .mat-calendar-header{
+//    background-color: #ffe1c5 !important;
+//    padding: 0 !important;;
+//    height: 50px !important;;
+//
+//    .mat-calendar-controls{
+//      margin-bottom: 0 !important;
+//    }
+//
+//  }
+//  .mat-calendar-content{
+//    padding: 0;
+//  }
+//
+//  .mat-calendar-table-header{
+//    margin-bottom: 0;
+//    tr{
+//      background-color: #ffe1c5 !important;
+//
+//      th{
+//        color: #666666;
+//        border: none;
+//
+//      }
+//    }
+//  }
+//
+//}
+//.mat-calendar-body-cell-content{
+//  color: #b4b4b4;
+//}
+//.mat-calendar-body-selected{
+//  font-weight: bold;
+//  background: none;
+//  border: none;
+//
+//}
+//.mat-calendar-body-label{
+//  visibility: hidden;
+//}
 .mat-select-content{
   background: none;
   padding: 0;
@@ -85,15 +96,15 @@ input{
 
 
 }
-.mat-floating-placeholder{
-  top: -40px !important;
-}
-.cdk-overlay-container{
-  .cdk-overlay-pane{
-    top: 285px !important;
-    margin-left: 15px;
-  }
-}
+//.mat-floating-placeholder{
+//  top: -40px !important;
+//}
+//.cdk-overlay-container{
+//  .cdk-overlay-pane{
+//    top: 285px !important;
+//    margin-left: 15px;
+//  }
+//}
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
   color:    white;
 }

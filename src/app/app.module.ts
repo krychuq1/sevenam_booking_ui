@@ -17,7 +17,10 @@ import {NumberOfPeopleComponent} from "../components/numberOfPeople/numberOfPeop
 import {Booking} from "../models/booking.class";
 import {BookingService} from "../services/booking.service";
 import {ClickOutsideDirective} from "../directives/click-outside.directive";
-
+import {TimeSelectionComponent} from '../components/time-selection/time-selection.component';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatNativeDateModule} from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -28,7 +31,8 @@ import {ClickOutsideDirective} from "../directives/click-outside.directive";
       HomeComponent,
       BookingComponent,
       NumberOfPeopleComponent,
-      ClickOutsideDirective
+      ClickOutsideDirective,
+    TimeSelectionComponent
 
   ],
   imports: [
@@ -38,7 +42,10 @@ import {ClickOutsideDirective} from "../directives/click-outside.directive";
       ReactiveFormsModule,
       HttpModule,
       BrowserAnimationsModule,
-      RouterModule.forRoot([
+    MatDatepickerModule,
+    MatFormFieldModule,
+    MatNativeDateModule,
+    RouterModule.forRoot([
           {
               path: '',
               component: HomeComponent
