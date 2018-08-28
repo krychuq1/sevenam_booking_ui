@@ -1,10 +1,28 @@
 <div class="booking-holder">
+  <!--destination-->
+  <form class="form-holder">
+    <mat-form-field class="input-holder-max">
+      <input matInput placeholder="From">
+    </mat-form-field>
+    <mat-form-field class="input-holder-max">
+      <input matInput placeholder="To">
+    </mat-form-field>
+
+    <!--<mat-form-field class="example-full-width">-->
+      <!--<textarea matInput placeholder="Leave a comment"></textarea>-->
+    <!--</mat-form-field>-->
+  </form>
+
+
+
+  <!--<button mat-raised-button color="primary">Primary</button>-->
+
   <!--number of people-->
-  <numberOfPeople [show]="manageDropDown" (showOutput)="eventNumberOfPeople($event)"></numberOfPeople>
+  <!--<numberOfPeople [show]="manageDropDown" (showOutput)="eventNumberOfPeople($event)"></numberOfPeople>-->
   <!--<mat-form-field>-->
-    <input matInput [matDatepicker]="picker" placeholder="Choose a date">
-    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-    <mat-datepicker #picker></mat-datepicker>
+    <!--<input matInput [matDatepicker]="picker" placeholder="Choose a date">-->
+    <!--<mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>-->
+    <!--<mat-datepicker #picker></mat-datepicker>-->
   <!--</mat-form-field>-->
 
   <!--<mat-form-field class="date-picker-holder">-->
@@ -14,6 +32,6 @@
     <!--&lt;!&ndash;[(ngModel)]=""&ndash;&gt;-->
     <!--<mat-datepicker #picker (selectedChanged)="calendarHide()" (appClickOutside)="outOut($event)"> </mat-datepicker>-->
   <!--</mat-form-field>-->
-  <timeSelection [show]="manageDropDown" (showOutput)="eventTime($event)"></timeSelection>
+  <!--<timeSelection [show]="manageDropDown" (showOutput)="eventTime($event)"></timeSelection>-->
   <button id="bookBtn" (click)="bookTrip()" *ngIf="manageDropDown.showButton" >Book rickshaw</button>
 </div>

@@ -1,9 +1,10 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
 //GENERAL STYLES
 @import "style/inputs";
 @import "style/buttons";
 @import "style/typography";
 //@import "../node_modules/hamburgers/_sass/hamburgers/hamburgers";
-@import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
 body{
   margin: 0;

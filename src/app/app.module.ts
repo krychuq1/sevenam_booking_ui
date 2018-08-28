@@ -21,6 +21,8 @@ import {TimeSelectionComponent} from '../components/time-selection/time-selectio
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatNativeDateModule} from '@angular/material';
+import {MatButtonModule} from '@angular/material/button';
+import {MatInputModule} from '@angular/material/input';
 
 @NgModule({
   declarations: [
@@ -45,6 +47,8 @@ import {MatNativeDateModule} from '@angular/material';
     MatDatepickerModule,
     MatFormFieldModule,
     MatNativeDateModule,
+    MatInputModule,
+    MatButtonModule,
     RouterModule.forRoot([
           {
               path: '',
